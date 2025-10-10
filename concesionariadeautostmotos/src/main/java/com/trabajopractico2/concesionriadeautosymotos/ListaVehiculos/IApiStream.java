@@ -3,10 +3,6 @@ package com.trabajopractico2.concesionriadeautosymotos.ListaVehiculos;
 public interface IApiStream {
     //Interface con los metodos a implementar en ListaVehiculo
     /**
-     * Imprime en consola la lista de vehiculos
-     */
-    void imprimirVehiculos();
-    /**
      * Imprime en consola el vehiculo mas caro
      */
     void vehiculoMasCaro();
