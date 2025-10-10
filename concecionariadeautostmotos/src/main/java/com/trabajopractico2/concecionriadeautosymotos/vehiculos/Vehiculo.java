@@ -9,7 +9,6 @@ public abstract class Vehiculo implements Comparable<Vehiculo> {
     private String marca;
     private String modelo;
     private double precio;
-
     @Override
     public int compareTo(Vehiculo vehiculo2) {
         String vehiculoOriginal=this.marca+" "+this.modelo+" "+this.precio;
