@@ -6,12 +6,18 @@ import java.util.Set;
 import java.util.TreeSet;
 import com.trabajopractico2.concesionriadeautosymotos.vehiculos.Vehiculo;
 
+import lombok.Getter;
+import lombok.Setter;
+@Setter
+@Getter
+
 public class ListaVehiculo implements IApiStream {
     private List<Vehiculo> vehiculos;
 
     public ListaVehiculo(List<Vehiculo> vehiculos) {
         this.vehiculos = vehiculos;
     }
+
     /**
      * Metodo para imprimir la lista de vehiculos
      */
