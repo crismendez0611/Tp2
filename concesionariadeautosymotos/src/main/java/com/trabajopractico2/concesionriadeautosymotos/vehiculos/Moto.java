@@ -17,7 +17,7 @@ public class Moto extends Vehiculo {
         super(marca, modelo, precio);
         this.cilindrada = cilindrada;
     }
-
+    @Override
     public String toString() {
         NumberFormat formateador = NumberFormat.getCurrencyInstance(Locale.forLanguageTag("es-AR"));
         return "Marca: " + getMarca() + " // Modelo: " + getModelo() + " // Cilindrada: " + cilindrada +

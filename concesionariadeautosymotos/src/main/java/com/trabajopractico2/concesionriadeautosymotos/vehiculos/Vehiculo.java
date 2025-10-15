@@ -17,6 +17,7 @@ public abstract class Vehiculo implements Comparable<Vehiculo> {
      * @param vehiculo2 Vehiculo a comparar
      * @return int Resultado de la comparacion
      */
+    @Override
     public int compareTo(Vehiculo vehiculo2) {
         String vehiculoOriginal = this.marca + " " + this.modelo + " " + this.precio;
         String vehiculoAComparar = vehiculo2.getMarca() + " " + vehiculo2.getModelo() + " " + vehiculo2.getPrecio();
