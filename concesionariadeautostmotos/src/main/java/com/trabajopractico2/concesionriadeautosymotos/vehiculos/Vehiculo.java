@@ -9,9 +9,11 @@ public abstract class Vehiculo implements Comparable<Vehiculo> {
     private String marca;
     private String modelo;
     private double precio;
+
     /**
      * Metodo para comparar dos vehiculos
      * Para poder ordenar los vehiculos de forma natural
+     * 
      * @param vehiculo2 Vehiculo a comparar
      * @return int Resultado de la comparacion
      */

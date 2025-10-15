@@ -6,11 +6,6 @@ import java.util.Set;
 import java.util.TreeSet;
 import com.trabajopractico2.concesionriadeautosymotos.vehiculos.Vehiculo;
 
-import lombok.Getter;
-import lombok.Setter;
-@Setter
-@Getter
-
 public class ListaVehiculo implements IApiStream {
     private List<Vehiculo> vehiculos;
 
@@ -23,7 +18,7 @@ public class ListaVehiculo implements IApiStream {
      */
 
     public void imprimirVehiculos() {
-        System.out.println("\n =============================\n ");
+        System.out.println("\n \n ");
         vehiculos.forEach(System.out::println);
     }
 
@@ -41,8 +36,7 @@ public class ListaVehiculo implements IApiStream {
 
     @Override
     public void vehiculoMasCaro() {
-        System.out.println("\n=============================");
-        System.out.println("\n");
+        System.out.println("\n=============================\n");
         double precioMax = vehiculos
                 .stream()
                 .max(Comparator.comparingDouble(Vehiculo::getPrecio))
