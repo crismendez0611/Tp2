@@ -1,14 +1,21 @@
 package com.trabajopractico2.concesionriadeautosymotos.listavehiculos;
 
 import java.util.Comparator;
+import java.util.List;
 import java.util.Set;
 import java.util.TreeSet;
+
 import com.trabajopractico2.concesionriadeautosymotos.vehiculos.Vehiculo;
 
-public class ListaVehiculo implements IApiStream {
-    private Set<Vehiculo> vehiculos;
+import lombok.Getter;
+import lombok.Setter;
 
-    public ListaVehiculo(Set<Vehiculo> vehiculos) {
+@Setter
+@Getter
+public class ListaVehiculo implements IApiStream {
+    private List<Vehiculo> vehiculos;
+
+    public ListaVehiculo(List<Vehiculo> vehiculos) {
         this.vehiculos = vehiculos;
     }
 
@@ -28,7 +35,7 @@ public class ListaVehiculo implements IApiStream {
      * @param v
      */
     public void AgregarVehiculos(Vehiculo... v) {
-        for (int i = 0; i < v.length; i++) {
+        for(int i = 0; i < v.length; i++) {
             vehiculos.add(v[i]);
         }
     }
@@ -89,7 +96,7 @@ public class ListaVehiculo implements IApiStream {
     public void ordenadosDeFormaNatural() {
         System.out.println("\n=============================");
         System.out.println("\nVehiculos ordenados de forma natural(por marca, modelo y precio)");
-        Set<Vehiculo> vehiculos2 = new TreeSet<>(vehiculos);
+        Set<Vehiculo> vehiculos2 = new TreeSet<>();
         vehiculos2.addAll(vehiculos);
         vehiculos2.forEach(System.out::println);
     }

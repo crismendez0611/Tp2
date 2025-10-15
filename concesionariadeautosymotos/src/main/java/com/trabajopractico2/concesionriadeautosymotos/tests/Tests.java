@@ -1,7 +1,6 @@
 package com.trabajopractico2.concesionriadeautosymotos.tests;
 
-import java.util.LinkedHashSet;
-
+import java.util.ArrayList;
 import com.trabajopractico2.concesionriadeautosymotos.listavehiculos.ListaVehiculo;
 import com.trabajopractico2.concesionriadeautosymotos.vehiculos.Auto;
 import com.trabajopractico2.concesionriadeautosymotos.vehiculos.Moto;
@@ -13,7 +12,7 @@ public class Tests {
         Vehiculo moto1 = new Moto("Honda", "Titan", "125", 60000.00);
         Vehiculo auto2 = new Auto("Peugeot", "208", 5, 250000.00);
         Vehiculo moto2 = new Moto("Yamaha", "YBR", "160", 80500.50);
-        ListaVehiculo listaVehiculo = new ListaVehiculo(new LinkedHashSet<>());
+        ListaVehiculo listaVehiculo = new ListaVehiculo(new ArrayList<>());
         listaVehiculo.AgregarVehiculos(auto1, moto1, auto2, moto2);
         listaVehiculo.imprimirVehiculos();
         listaVehiculo.vehiculoMasCaro();
